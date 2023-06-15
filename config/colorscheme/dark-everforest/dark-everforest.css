@@ -1,0 +1,17 @@
+/* dark-everforest */
+
+@define-color bg #1e2326;
+@define-color bg-alt #272e33;
+@define-color fg #9da9a0;
+@define-color red #543a48;
+@define-color bright-red #e67e80;
+@define-color green #56635f;
+@define-color bright-green #83c092;
+@define-color yellow #e69875;
+@define-color bright-yellow #dbbc7f;
+@define-color blue #3a515d;
+@define-color bright-blue #7fbbb3;
+@define-color magenta #d699b6;
+@define-color bright-magenta #d799b6;
+@define-color cyan #859289;
+@define-color bright-cyan #9da9a0;

@@ -1,0 +1,118 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 12,
+    "margin-top": 3,
+    "margin-left": 6,
+    "margin-right": 6,
+    "modules-center": ["wlr/workspaces"],
+    "modules-left": ["clock", "hyprland/window"],
+    "modules-right": [
+        "custom/updates",
+        "custom/separator",
+        "custom/control-center",
+        "custom/separator",
+        "bluetooth",
+        "custom/separator",
+        "network",
+        "custom/separator",
+        "backlight",
+        "custom/separator",
+        "pulseaudio",
+        "custom/separator",
+        "battery"
+    ],
+   "hyprland/window": {
+        "format": "{}"
+    },
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+                  "1": "",
+                  "2": "",
+                  "3": "",
+                  "4": "",
+                  "5": "",
+                  "urgent": "",
+  },
+        "persistent_workspaces": {
+                  "1" : [],
+                  "2" : [],
+                  "3" : [],
+                  "4" : [],
+                },
+		},
+    "custom/updates": {
+        "exec": "(paru -Qua) | wc -l",
+        "interval": 7200,
+        "format": " {}"
+    },
+    "custom/control-center": {
+        "on-click": "$HOME/.config/waybar/eww-script control-center",
+        "format" : "",
+        "tooltip": false
+    },
+    "custom/separator": {
+    "format": "|",
+    "interval": "once",
+    "tooltip": false
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", ""],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+    "battery": {
+        "states": {
+            "good": 100,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "{icon}󱐋 {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+    },
+    "clock": {
+        "on-click": "$HOME/.config/waybar/eww-script date",
+        "format": "{:󰥔 %R   %d/%m}",
+    },
+    "bluetooth": {
+        "on-click": "blueman-manager",
+	      "format": " {status}",
+	      "format-connected": " {device_alias}",
+	      "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+  },
+    "network": {
+        "format-wifi": "直 {essid}",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "󱞐",
+        "format-disabled": "睊 disconnected",
+        "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+        "on-click": "$HOME/.config/waybar/eww-script wifi-on-off"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+        "on-click": "amixer -D pipewire set Master 1+ toggle",
+        "scroll-step": 1,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", "墳", ""]
+        }
+    }
+}
+

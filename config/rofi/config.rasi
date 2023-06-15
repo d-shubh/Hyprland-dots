@@ -1,0 +1,91 @@
+configuration {
+  display-drun: " Search Apps ";
+  display-run: "  Run";
+  display-window: " Windows ";
+  drun-display-format: "{name}";
+  font: "OpenDyslexic Nerd Font 12";
+  show-icons : true;
+  icon-theme : "Tela Dark";
+  modi: "window,drun,run";
+}
+
+@theme "/dev/null"
+@import "../colorscheme/current-colorscheme/current-colorscheme.rasi" 
+// @import "colors.rasi"
+window {
+  width: 30%;
+}
+
+element {
+  padding: 8;
+  border-radius: 6;
+  text-color:  @fg;
+}
+
+element selected {
+  background-color: @fg;
+  text-color: @bg;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 24;
+  background-color: inherit;
+  padding: 0 10 0 10;
+}
+
+entry {
+  border: 3;
+  border-color: @bg-alt;
+  border-radius: 6;
+  padding: 8;
+  margin: 0 0 0 16;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+  padding:10;
+}
+
+listview {
+  padding: 12;
+  background-color: @bg;
+  columns: 2;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @bg;
+  border-radius: 15;
+  margin:14;
+  border:1;
+  border-color: @fg;
+  children: [inputbar, listview, mode-switcher];
+}
+
+button {
+  margin: 9;
+  border: 1;
+  border-color: @bg-alt;
+  border-radius: 6;
+  background-color: @fg-alt;
+  text-color: @bg;
+  padding: 5;
+}
+
+prompt {
+  background-color: @bg-alt;
+  border-radius: 6;
+  enabled: true;
+  padding: 12;
+  text-color: @fg;
+}
+
+/* vim: ft=sass
+

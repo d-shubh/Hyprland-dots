@@ -1,0 +1,10 @@
+
+*{
+  bg: #101419;
+  bg-alt: #1f2328;
+  
+  fg: #dee1e6;
+  fg-alt: #94f7c5;
+
+  background-color: @bg;
+}

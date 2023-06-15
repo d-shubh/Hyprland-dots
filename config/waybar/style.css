@@ -1,0 +1,135 @@
+@import "../colorscheme/current-colorscheme/current-colorscheme.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-family: OpenDyslexic Nerd Font;
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+tooltip {
+    background: @bg;
+    border-radius: 6px;
+}
+
+#workspaces button {
+      color: @fg;
+      margin: 0px 3px 3px 0px;
+
+}
+
+#workspaces button.active {
+    color: @green;
+}
+
+#workspaces button.focused {
+    color: #e0af68;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#workspaces button:hover {
+    background: @cyan;
+    color: @bg;
+    border-radius: 20px;
+    box-shadow: 0 0 1px @bright-cyan,
+    0 0 5px @bright-cyan;
+}
+
+#custom-updates,
+#custom-control-center,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#bluetooth,
+#network,
+#workspaces,
+#custom-separator,
+#backlight {
+      background: @bg;
+      color: @fg;
+      border-radius: 6px;
+      padding: 0px 10px 0px 10px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+}
+
+#workspaces {
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+
+#custom-updates {
+    color: @magenta;
+    border-right: 0px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+#custom-separator, #custom-control-center {
+    font-size: 16px;
+    color: @fg;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#window {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: @fg;
+    margin-left: 10px;
+}
+
+#bluetooth{
+    color: @blue;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#network {
+    color: @bright-cyan;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#pulseaudio {
+    color: @green;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#battery {
+    border-radius: 0px 6px 6px 0px;
+    margin-right: 10px;
+    border-left: 0px;
+}
+#battery.good{
+  color: @cyan;
+}
+#battery.warning{
+  color: @yellow;
+}
+#battery.critical{
+  color: @red;
+}
+#battery.charging, #battery.plugged{
+    color: @green;
+}
+
+#backlight {
+    color: @yellow;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
