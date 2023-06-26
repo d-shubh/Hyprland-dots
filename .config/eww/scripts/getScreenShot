@@ -16,8 +16,8 @@ fi
 
 # take shots
 shotnow () {
-cd ${dir} && grim $file && feh ${dir}/$file
-notify_user
+  cd ${dir} && grim $file && feh ${dir}/$file
+  notify_user
 }
 
 shotarea () {

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+time=$(date +%Y-%m-%d_%H:%M:%S)
+dir="$HOME/Pictures/Screenshots"
+file="Screenshot_${time}.png"
+active_win_area=$(hyprctl -j activewindow | jq -r '[ ( [ .at[0], .at[1]] | join(",") ), ([ .size[0], .size[1]] | join("x") )] | join(" ") ')
+
+# notify
+notify_user () {
+if [[ -e "$dir/$file" ]]; then
+  dunstify "Saved as ${dir}/${file}"
+else
+  dunstify "Screenshot Deleted."
+fi
+}
+
+# take shots
+cd ${dir} && grim $file && feh ${dir}/$file
+notify_user
