@@ -1,0 +1,13 @@
+#!/bin/bash
+
+wallpaper_dir="$HOME/Pictures/Wallpapers"
+
+# generates a random number
+num_files=$(ls "$wallpaper_dir" | wc -l)
+random_index=$((RANDOM % num_files))
+
+random_wallpaper=$(ls "$wallpaper_dir" | sed -n "${random_index}p")
+
+swww img --transition-type random "$wallpaper_dir/$random_wallpaper"
+
+echo "Wallpaper Set!"

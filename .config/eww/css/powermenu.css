@@ -1,0 +1,82 @@
+.powermenu-layout{
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.bye {
+  margin: -300px 0 0 0;
+  background: none;
+  font-family: "Source Han Sans JP";
+  font-size: 45px;
+  color: black;
+}
+
+.background-img{
+  border-radius: 15px 15px 0 0;
+  border-bottom: 2px solid white;
+}
+
+.pfp{
+  margin: -75px 0 0 0;
+  background: none;
+}
+
+.powermenu-uptime{
+  font: 18px "JetBrainsMono Nerd Font";
+  font-weight : bold;
+  background: @color12;
+  color: @bg;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 30px 50px 40px 50px;
+}
+.powermenu-buttons {
+  margin: 0 25px 0 25px;
+  border-radius: 25px
+}
+.button-label{
+  all: unset;
+  font: 40px "JetBrainsMono Nerd Font";
+  background: rgba(0, 0, 0, 0);
+}
+
+.button{
+  all: unset;
+  border-radius: 60px;
+  padding: 0 10px 0 10px;
+  background: @bg-alt;
+  box-shadow: 0 0 7px black;
+  margin: 10px 0px 10px 5px;
+}
+.logout button{
+  color: @color8;
+}
+.lock button{
+  color: @color9;
+}
+.suspend button{
+  color: @color5;
+}
+.reboot button{
+  color: @color4;
+}
+.poweroff button{
+  color: @color2;
+}
+
+/* Fixing mis-aligment of icons */
+.poweroff button {
+  padding: 0 8px 0 0;
+}
+.reboot button {
+  padding: 1px 5px 0 0;
+}
+
+/* Hover effect */
+.button:hover{
+  background:@color8;
+  color: @bg;
+  box-shadow: 0 0 1px @color12,
+  0 0 5px @color12;
+}
+

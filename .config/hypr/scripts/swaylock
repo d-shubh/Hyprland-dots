@@ -1,0 +1,26 @@
+#!/bin/bash
+
+swaylock \
+--screenshots \
+--indicator \
+--clock \
+--font 'JetBrainsMono Nerd Font' \
+--timestr '%l:%M %p' \
+--datestr '%a %d.%m.%y' \
+--inside-wrong-color e5646a \
+--ring-wrong-color 11111b  \
+--inside-clear-color 94f7c5 \
+--ring-clear-color 11111b \
+--inside-ver-color 75aaf0 \
+--ring-ver-color 11111b \
+--text-color  79c3ee \
+--indicator-radius 150 \
+--indicator-thickness 10 \
+--effect-blur 10x10 \
+--ring-color 11111b \
+--key-hl-color 74bee9 \
+--line-color 00000000 \
+--inside-color 00000000 \
+--separator-color 00000000 \
+--effect-vignette 0.5:0.9 \
+--fade-in 0.5 &

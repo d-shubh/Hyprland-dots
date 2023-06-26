@@ -1,0 +1,150 @@
+@import "../colorscheme/current-colorscheme/current-colorscheme.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-family: OpenDyslexic Nerd Font;
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+tooltip {
+    background: @bg;
+    border-radius: 6px;
+}
+
+#workspaces button {
+      color: @fg;
+      margin: 0px 3px 3px 0px;
+
+}
+
+#workspaces button.active {
+    color: @color3;
+}
+
+#workspaces button.focused {
+    color: #e0af68;
+}
+
+#workspaces button.urgent {
+    color: @color1;
+}
+
+#workspaces button:hover {
+    background: @color11;
+    color: @bg;
+    border-radius: 20px;
+    box-shadow: 0 0 1px @color12,
+    0 0 5px @color12;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#bluetooth,
+#network,
+#workspaces,
+#custom-separator,
+#backlight,
+#custom-updates,
+#custom-control-center,
+#custom-shutdown,
+#custom-launcher {
+      background: @bg;
+      color: @fg;
+      border-radius: 6px;
+      padding: 0px 10px 0px 10px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+}
+
+#workspaces {
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+
+#custom-updates {
+    color: @color9;
+    border-right: 0px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+#custom-separator, #custom-control-center {
+    font-size: 16px;
+    color: @fg;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#custom-shutdown {
+  color: @color2;
+  border-radius: 6px;
+  margin:2px;
+  padding: 0 15px 0 15px;
+}
+
+#custom-launcher {
+  color: @color12;
+  border-radius: 6px;
+  margin:2px;
+  padding: 0 15px 0 15px;
+}
+#window {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: @fg;
+    margin-left: 10px;
+}
+
+#bluetooth{
+    color: @color7;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#network {
+    color: @color12;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#pulseaudio {
+    color: @color3;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+
+#battery {
+    border-radius: 0px 6px 6px 0px;
+    margin-right: 10px;
+    border-left: 0px;
+}
+#battery.good{
+  color: @color11;
+}
+#battery.warning{
+  color: @color5;
+}
+#battery.critical{
+  color: @color1;
+}
+#battery.charging, #battery.plugged{
+    color: @color3;
+}
+
+#backlight {
+    color: @color5;
+    border-radius: 0px;
+    border-width: 2px 0px 2px 0px;
+}
+

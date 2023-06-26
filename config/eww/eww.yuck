@@ -1,3 +1,0 @@
-(include "./yuck/variables.yuck")
-(include "./yuck/date.yuck")
-(include "./yuck/control-center.yuck")

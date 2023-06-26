@@ -1,0 +1,47 @@
+
+(defwindow powermenu 
+  :monitor 0
+	:geometry (geometry :x "6px"
+						:y "6px" 
+						:width "10%" 
+						:height "48%"
+						:anchor "center")
+	(powermenu)
+)
+
+
+(defwidget powermenu []
+    (box :class "powermenu-layout" :space-evenly false :orientation "v" 
+        (image :class "background-img" :path "./assets/bg.png" :image-width 410) 
+        (label :class "bye" :text "またあとで")
+        (image :class "pfp" :path "./assets/pfp.png" :image-width 140 :image-height 140 )
+        (label :class "powermenu-uptime"  :text " uptime: ${uptime}")
+        (box :class "powermenu-buttons" :orientation "h" :space-evenly true :spacing 10
+          (box :class "logout" 
+            (button :class "logout button" :onclick "loginctl kill-user $(whoami)"
+              (label :class "button-label" :text "󰍃")
+            )    
+          )
+          (box :class "lock" 
+            (button :class "lock button" :onclick "$HOME/eww/target/release/eww close powermenu &&  $HOME/.config/hypr/scripts/swaylock"
+              (label :class "button-label" :text  "")
+            )    
+          )
+          (box :class "suspend" 
+            (button :class "suspend button" :onclick "$HOME/eww/target/release/eww close powermenu && systemctl suspend"  
+              (label :class "button-label" :text "󰤄")
+            )    
+          )
+          (box :class "reboot" 
+            (button :class "reboot button" :onclick "reboot"     
+              (label :class "button-label" :text "")
+            )    
+          )
+          (box :class "poweroff" 
+            (button :class "poweroff button" :onclick "poweroff" 
+              (label :class "button-label" :text "" ) 
+            )    
+          )
+    )
+    ) 
+)
