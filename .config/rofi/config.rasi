@@ -61,7 +61,7 @@ listview {
   padding: 12;
   background-color: @bg;
   columns: 2;
-  lines: 8;
+  lines: 10;
   scrollbar: true;
 }
 
@@ -83,11 +83,11 @@ mainbox {
 }
 
 button {
-  margin: 9;
+  margin: 8;
   border-radius: 6;
   background-color: @fg;
   text-color: @bg;
-  padding: 5;
+  padding: 2;
 }
 
 button selected{
