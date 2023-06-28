@@ -9,31 +9,27 @@
 .timebox {
 	 margin: 30px 0px;
 }
-
 .timebox .time-container .content {
-	 font-family: Corinthia;
-	 font-weight: bolder;
-	 font-size: 80px;
+	 font-family: "ttyclock";
+	 font-size: 60px;
 }
-.colon {
-  color: @color5;
-	 font-family: Corinthia;
-	 font-size: 80px;
+.content {
+  padding: 10;
+  border-radius: 15px;
+  margin: 20;
+  background: @color12;
+  color: @bg;
 }
-.timebox .time-container .divider {
-	 margin: 8px 15px;
-	 padding: 0px 1px;
-	 background: linear-gradient(@color1, @color9, @color7,@color11, @color3, @color5);
-}
-
 .timebox .date-container {
-	 font: 40px "Corinthia";
+   font-family: "JetBrainsMono Nerd Font";
+	 font-size: 20px;
 	 margin-top: 2px;
 }
 
 .cal-box {
 	 font-family: JetBrainsMono Nerd Font;
 	 background-color: @bg;
+   font-size: 18px;
 	 border-radius: 15px;
    box-shadow: 0 0 5px black;
 	 padding: 0 1rem 0.2rem;
@@ -44,14 +40,20 @@
 .cal-box .cal {
 	 background-color: inherit;
 	 padding: 0.5rem 0.1rem 0rem;
-	 margin-left: 10px;
+	 margin: 0px;
 	 border: 0px;
 }
 
 .cal-box .cal.highlight {
 	 padding: 10rem;
+   background: @color3;
+   color: @bg;
+   border-radius: 6px;
+  
 }
-
+.cal.selected{
+  background: cyan;
+}
 calendar{
   color: @color6;
 }
@@ -67,7 +69,6 @@ calendar.header {
 calendar.button {
 	 color:@color11;
 }
-
 calendar.highlight {
 	 color: @color3;
 	 font-weight: bold;

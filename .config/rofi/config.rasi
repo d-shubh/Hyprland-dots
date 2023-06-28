@@ -40,7 +40,6 @@ element-text {
 element-icon {
   size: 24;
   background-color: inherit;
-  padding: 0 10 0 10;
 }
 
 entry {
@@ -61,7 +60,7 @@ listview {
   padding: 12;
   background-color: @bg;
   columns: 2;
-  lines: 10;
+  lines: 8;
   scrollbar: true;
 }
 
@@ -75,10 +74,9 @@ window{
 }
 mainbox {
   background-color: @bg;
-  border: 2;
+  border: 4;
   border-radius: 15;
   border-color: @fg;
-  margin: 10;
   children: [inputbar, listview, mode-switcher];
 }
 

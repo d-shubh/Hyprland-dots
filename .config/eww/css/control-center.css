@@ -2,11 +2,9 @@
 *{
   background : @bg;
 }
-
 window {
-  background: rgba(0, 0, 0, 0)
+  background: rgba(0, 0, 0, 0);
 }
-
 .control-center-layout{
   border: 3px solid @fg;
   border-radius: 15px;
@@ -71,7 +69,7 @@ slider{
 	background-color: @bg-alt;
 	border-radius: 16px;
 	min-height: 140px;
-	min-width: 10px;
+	min-width: 0px;
 }
 
 .brightness-slider, .volume-slider, highlight {
@@ -262,6 +260,14 @@ slider{
   color: @color3;
 }
 
+.song-title-label {
+  margin: 15 0 -5 0;
+  border-top: 2px solid @color3; 
+}
+.song-artist-label{
+  margin: 0 0 10 0;
+  border-bottom: 2px solid @color3; 
+}
 .no-media{
   color: @bg-alt;
 }

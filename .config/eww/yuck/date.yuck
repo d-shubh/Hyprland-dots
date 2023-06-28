@@ -24,9 +24,7 @@
          :space-evenly false
          :halign "center"
          :valign "center"
-      (label :text "${hour} " :class "content")
-      (label :text ": " :class "colon")
-      (label :text " ${minute}" :class "content")
+      (label :text " ${time}" :class "content")
     )
     (box :class "date-container"
          :orientation "h"

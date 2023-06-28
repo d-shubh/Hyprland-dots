@@ -1,6 +1,5 @@
 ;; DATE VARS 
-(defpoll minute :interval "5s" "date '+%M'")
-(defpoll hour :interval "15m" "date '+%H'")
+(defpoll time :interval "1s" "date '+%T'")
 (defpoll weekday :interval "24h" "date '+%A'")
 (defpoll monthday :interval "24h" "date '+%d %b'")
 (defpoll month_year :interval "24h" "date '+%B %Y'")
