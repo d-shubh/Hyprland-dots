@@ -4,6 +4,7 @@
 </div>
 
 <h3>Info:</h3>
+
 + Compositor/WM : ```Hyprland```
 + Bar : ```Waybar```
 + Launcher :  ```rofi-lbonn-wayland```
