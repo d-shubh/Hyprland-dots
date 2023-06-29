@@ -4,18 +4,19 @@
 </div>
 
 <h3>Info:</h3>
-* Compositor/WM : ```Hyprland```
-* Bar : ```Waybar```
-* Launcher :  ```rofi-lbonn-wayland```
-* Widgets : ```Eww```
-* Terminal : ```kitty```
-* Audio Visualiser : ```cava``` 
-* Lockscreen : ```swaylock-effects```
-* File manager : ```thunar```
++ Compositor/WM : ```Hyprland```
++ Bar : ```Waybar```
++ Launcher :  ```rofi-lbonn-wayland```
++ Widgets : ```Eww```
++ Terminal : ```kitty```
++ Audio Visualiser : ```cava``` 
++ Lockscreen : ```swaylock-effects```
++ File manager : ```thunar```
 
 
 <h3>🎨 Colorschemes: </h3>
 <div align="center">
+  
 |Dark decay|Gruvbox dark|
 |-|-|
 |<img height="210px" src="./assets/decay.png">|<img height="210px" src="./assets/gruvbox.png">|
