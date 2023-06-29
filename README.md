@@ -20,14 +20,14 @@
   
 |Dark decay|Gruvbox dark|
 |-|-|
-|<img height="210px" src="./assets/decay.png">|<img height="210px" src="./assets/gruvbox.png">|
+|<img width="300px" src="./assets/decay.png">|<img width="300px" src="./assets/gruvbox.png">|
 
 |Dark Everforest|Rosepine|
 |-|-|
-|<img height="210px" src="./assets/everforest.png">|<img height="210px" src="./assets/rosepine.png">|
+|<img width="300px" src="./assets/everforest.png">|<img width="300px" src="./assets/rosepine.png">|
 
 |Catppuccin Mocha|Nord|
 |-|-|
-|<img height="210px" src="./assets/catppuccin.png">|<img height="210px" src="./assets/nord.png">|
+|<img width="300px" src="./assets/catppuccin.png">|<img width="300px" src="./assets/nord.png">|
 </div>
 
