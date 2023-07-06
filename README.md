@@ -12,7 +12,7 @@
 + Terminal : ```kitty```
 + Audio Visualiser : ```cava``` 
 + Lockscreen : ```swaylock-effects```
-+ File manager : ```thunar```
++ File manager : ```ranger```
 
 
 <h3>🎨 Colorschemes: </h3>
