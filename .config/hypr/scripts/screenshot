@@ -15,5 +15,5 @@ fi
 }
 
 # take shots
-cd ${dir} && grim $file && feh ${dir}/$file
+cd ${dir} && grim $file && swayimg ${dir}/$file
 notify_user
