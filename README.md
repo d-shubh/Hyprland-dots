@@ -31,3 +31,5 @@
 |<img width="300px" src="./assets/catppuccin.png">|<img width="300px" src="./assets/nord.png">|
 </div>
 
+<h3>Install Script:</h3>
+<h6>WIP</h6>
